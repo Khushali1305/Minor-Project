@@ -1,0 +1,43 @@
+{
+  "version": "v1",
+  "total_items": 926,
+  "source_distribution": {
+    "Grosser": 224,
+    "PURE": 600,
+    "PROMISE_exp": 102
+  },
+  "modal_distribution": {
+    "must": 73,
+    "should": 126,
+    "shall": 378,
+    "will": 198,
+    "may": 52,
+    "can": 90,
+    "none": 9
+  },
+  "ears_distribution": {
+    "Ubiquitous requirement": 165,
+    "Unwanted behaviour": 10,
+    "Optional requirement": 4,
+    "Event-driven requirement": 26,
+    "State-driven requirement": 5,
+    "optional requirement": 3,
+    "state driven": 2,
+    "Option": 2,
+    "option": 2,
+    "state-driven requirement": 2,
+    "Event -driven": 1,
+    "State requirement": 1,
+    "Optional Feature": 1,
+    "Ubiquitous": 285,
+    "unknown": 388,
+    "EventDriven": 11,
+    "OptionalFeatures": 1,
+    "UnwantedBehavior": 16,
+    "StateDriven": 1
+  },
+  "with_reference_rewrite": 224,
+  "fully_aligned": 224,
+  "word_count_mean": 23.05,
+  "word_count_median": 24
+}

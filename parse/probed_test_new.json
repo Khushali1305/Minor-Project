@@ -1,0 +1,1847 @@
+[
+  {
+    "item_id": "GROSSER_CS_E 50_7",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "The magnitude of any change in thrust or power and the associated transition time must be identified and described in the Engine instructions for installation and operation.",
+    "word_count": 27,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The Engine Control System shall provide a description of the magnitude of any change in thrust or power and the associated transition time to the Engine instructions for installation and operation.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "The magnitude of any change in thrust or power and the associated transition time shall be identified and described in the Engine instructions for installation and operation.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The magnitude of any change in thrust or power and the associated transition time should be identified and described in the Engine instructions for installation and operation.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The magnitude of any change in thrust or power and the associated transition time must in all cases be identified and described in the Engine instructions for installation and operation.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "in all cases",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'in all cases' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The DOA shall describe the associated transition time of any change in thrust or power in the Engine instructions for installation and operation.",
+    "master_template_label": "Process requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 1,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 1
+    },
+    "probe_count": 3
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_16",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "Single Failures leading to loss, interruption or corruption of Aircraft-Supplied Data, must not result in a Hazardous Engine Effect for any Engine.",
+    "word_count": 22,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "If a single Failure leads to loss, interruption or corruption of Aircraft-Supplied Data, then the Engine Control System shall not cause a Hazardous Engine Effect.",
+    "ears_template_label": "Unwanted behaviour",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "Single Failures leading to loss, interruption or corruption of Aircraft-Supplied Data, is required to not result in a Hazardous Engine Effect for any Engine.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.09
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "Single Failures leading to loss, interruption or corruption of Aircraft-Supplied Data, should not result in a Hazardous Engine Effect for any Engine.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "Single Failures leading to loss, interruption or corruption of Aircraft-Supplied Data, must momentarily not result in a Hazardous Engine Effect for any Engine.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "momentarily",
+        "distractor_category": "retry_trigger",
+        "hallucination_risk": "hallucinate retry or recovery action",
+        "description": "Distractor 'momentarily' targets: hallucinate retry or recovery action",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "As soon as a single failure leads to loss, interruption or corruption of Aircraft-Supplied Data, the Engine Control System shall prevent a hazardous engine effect.",
+    "master_template_label": "Functional requirement, EventMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 1,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 1
+    },
+    "probe_count": 3
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_14",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "When over-speed protection is provided through hydromechanical means, it must be demonstrated by test or other acceptable means that the over-speed function remains available between inspection and maintenance periods.",
+    "word_count": 29,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "EventDriven",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "Where over-speed protection is provided through hydromechanical means, the Engine Control System shall ensure the over-speed function remains available between inspection and maintenance periods.",
+    "ears_template_label": "Optional requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "Once over-speed protection is provided through hydromechanical means, it must be demonstrated by test or other acceptable means that the over-speed function remains available between inspection and maintenance periods.",
+        "expected_relation": "stable",
+        "operation": "rule_condition_syn",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "condition_syn",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "When over-speed protection is provided through hydromechanical means, it shall be demonstrated by test or other acceptable means that the over-speed function remains available between inspection and maintenance periods.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "When over-speed protection is provided through hydromechanical means, it should be demonstrated by test or other acceptable means that the over-speed function remains available between inspection and maintenance periods.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "When over-speed protection is provided through hydromechanical means, it must be demonstrated by test or other acceptable means that the over-speed function remains available between inspection and maintenance periods, and log the event.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and log the event",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and log the event' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "If over-speed protection is provided through hydromechanical means, the Engine Control System shall ensure the over-speed function is available between inspection and maintenance periods.",
+    "master_template_label": "Functional requirement, LogicMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_24",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "Engines having a 30-Second OEI Power Rating must incorporate means or provision for means for automatic availability and automatic control of the 30-Second OEI Power within its operating limitations.",
+    "word_count": 29,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "Where the Engine has a 30-Second OEI Power Rating, the Engine Control System shall incorporate means or provision for means for automatic availability and automatic control of the 30-Second OEI Power within its operating limitations.",
+    "ears_template_label": "Optional requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "Engines having a 30-Second OEI Power Rating shall incorporate means or provision for means for automatic availability and automatic control of the 30-Second OEI Power within its operating limitations.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "It is required that Engines having a 30-Second OEI Power Rating incorporate means or provision for means for automatic availability and automatic control of the 30-Second OEI Power within its operating limitations.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.1
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "Engines having a 30-Second OEI Power Rating should incorporate means or provision for means for automatic availability and automatic control of the 30-Second OEI Power within its operating limitations.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "Engines having a 30-Second OEI Power Rating must incorporate means or provision for means for automatic availability and automatic control of the 30-Second OEI Power within its operating limitations, and generate a report.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and generate a report",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and generate a report' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "If the engine has a 30-Second OEI Power Rating, the Engine Control System shall be able to automatically control the 30-Second OEI Power within its operating limitations.",
+    "master_template_label": "Functional requirement, LogicMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_15",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "All associated software and encoded logic must be designed, implemented and verified to minimise the existence of errors by using an approved method consistent with the criticality of the performed functions.",
+    "word_count": 31,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The associated software and encoded logic shall use approved methods to minimise the existence of errors consistent with the criticality of the performed functions.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that All associated software and encoded logic be designed, implemented and verified to minimise the existence of errors by using an approved method consistent with the criticality of the performed functions.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.1
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "All associated software and encoded logic shall be designed, implemented and verified to minimise the existence of errors by using an approved method consistent with the criticality of the performed functions.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "All associated software and encoded logic should be designed, implemented and verified to minimise the existence of errors by using an approved method consistent with the criticality of the performed functions.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "All associated software and encoded logic must transiently be designed, implemented and verified to minimise the existence of errors by using an approved method consistent with the criticality of the performed functions.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "transiently",
+        "distractor_category": "retry_trigger",
+        "hallucination_risk": "hallucinate retry or recovery action",
+        "description": "Distractor 'transiently' targets: hallucinate retry or recovery action",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "All encoded logic shall use approved methods to minimise the existence of errors for verification that are consistent with the criticality of the performed functions.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_18",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "The Engine Control System must be designed so that the loss or interruption of electrical power supplied from the aircraft to the Engine Control System will not result in a Hazardous Engine Effect.",
+    "word_count": 33,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "If a loss or interruption of electrical power supplied from the aircraft to the Engine Control System occurs, then the Engine Control System shall not cause a Hazardous Engine Effect.",
+    "ears_template_label": "Unwanted behaviour",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The Engine Control System be designed so that the loss or interruption of electrical power supplied from the aircraft to the Engine Control System will not result in a Hazardous Engine Effect.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.09
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "The Engine Control System shall be designed so that the loss or interruption of electrical power supplied from the aircraft to the Engine Control System will not result in a Hazardous Engine Effect.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The Engine Control System should be designed so that the loss or interruption of electrical power supplied from the aircraft to the Engine Control System will not result in a Hazardous Engine Effect.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The Engine Control System must be designed so that the loss or interruption of electrical power supplied from the aircraft to the Engine Control System will not result in a Hazardous Engine Effect, and log the event.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and log the event",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and log the event' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "As long as loss or interruption of electrical power supplied from the aircraft to the Engine Control System lasts, the Engine Control System shall prevent a Hazardous Engine Effect.",
+    "master_template_label": "Functional requirement, TimeMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_23",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "The effects of blockage or leakage of the signal lines on the Engine Control System must be considered as part of the system safety assessment of CS-E 50 (d) and the appropriate design precautions adopted.",
+    "word_count": 35,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The Engine Control System shall consider effects of blockage or leakage of the signal lines as part of the system safety assessment of CS-E 50 (d) and adopt appropriate design precautions.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "The effects of blockage or leakage of the signal lines on the Engine Control System shall be considered as part of the system safety assessment of CS-E 50 (d) and the appropriate design precautions adopted.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The effects of blockage or leakage of the signal lines on the Engine Control System should be considered as part of the system safety assessment of CS-E 50 (d) and the appropriate design precautions adopted.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The effects of blockage or leakage of the signal lines on the Engine Control System must be considered as part of the system safety assessment of CS-E 50 (d) and the appropriate design precautions adopted, and send a confirmation.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and send a confirmation",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and send a confirmation' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The Engine Control System shall adopt appropriate design precautions to effects of leakage of the signal lines.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 1,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 1
+    },
+    "probe_count": 3
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_8",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "The Engine Control System must be designed and constructed so that the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events, consistent with the safety objective associated with the intended aircraft application, can be achieved.",
+    "word_count": 36,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The Engine Control System shall achieve the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events, consistent with the safety objective associated with the intended aircraft application.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The Engine Control System be designed and constructed so that the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events, consistent with the safety objective associated with the intended aircraft application, can be achieved.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.08
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "The Engine Control System shall be designed and constructed so that the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events, consistent with the safety objective associated with the intended aircraft application, can be achieved.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The Engine Control System should be designed and constructed so that the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events, consistent with the safety objective associated with the intended aircraft application, can be achieved.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The Engine Control System must be designed and constructed so that the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events, consistent with the safety objective associated with the intended aircraft application, can be achieved, and generate a report.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and generate a report",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and generate a report' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The Engine Control System shall achieve the rate for Loss of Thrust (or Power) Control (LOTC/LOPC) events consistent with the safety objective associated with the intended aircraft application.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_25",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "Means for shutting down the Engine rapidly must be provided.",
+    "word_count": 10,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The Engine Control System shall provide means for shutting down the Engine rapidly.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that Means for shutting down the Engine rapidly be provided.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.3
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "Means for shutting down the Engine rapidly shall be provided.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "Means for shutting down the Engine rapidly should be provided.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "Means for shutting down the Engine rapidly must be provided, and notify the administrator.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and notify the administrator",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and notify the administrator' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The Engine Control System shall be able to shut down the engine rapidly.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_20",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "When an Engine dedicated power source is required for compliance with CS-E 50 (h)(1), its capacity should provide sufficient margin to account for Engine operation below idle where the Engine Control System is designed and expected to recover Engine operation automatically.",
+    "word_count": 41,
+    "modal": "should",
+    "modal_strength": 2,
+    "ears_type": "EventDriven",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "If below idle, the Engine Control System shall recover Engine operation automatically.",
+    "ears_template_label": "Unwanted behaviour",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "After an Engine dedicated power source is required for compliance with CS-E 50 (h)(1), its capacity should provide sufficient margin to account for Engine operation below idle where the Engine Control System is designed and expected to recover Engine operation automatically.",
+        "expected_relation": "stable",
+        "operation": "rule_condition_syn",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "condition_syn",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "When an Engine dedicated power source is required for compliance with CS-E 50 (h)(1), its capacity is expected to provide sufficient margin to account for Engine operation below idle where the Engine Control System is designed and expected to recover Engine operation automatically.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.05
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "When an Engine dedicated power source is recommended for compliance with CS-E 50 (h)(1), its capacity should provide sufficient margin to account for Engine operation below idle where the Engine Control System is designed and expected to recover Engine operation automatically.",
+        "expected_relation": "directional",
+        "operation": "condition_scope_weaken",
+        "direction": "weaken",
+        "original_condition": "required",
+        "new_condition": "recommended",
+        "description": "Condition weakened: 'required' → 'recommended'",
+        "scoring": {
+          "criterion": "output responds to widened condition — does not ignore the scope change",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "When an Engine dedicated power source is required for compliance with CS-E 50 (h)(1), its capacity should in all cases provide sufficient margin to account for Engine operation below idle where the Engine Control System is designed and expected to recover Engine operation automatically.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "in all cases",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'in all cases' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "As soon as below idle, the Engine Control System shall recover Engine operation automatically.",
+    "master_template_label": "Functional requirement, EventMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_22",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "Low voltage transients outside of the power supply voltage limitations, declared under CS-E 50 (h)(3), must meet the specifications of CS-E 50 (h)(1). The Engine Control System must resume normal operation when aircraft supplied electrical power returns to within the declared limits.",
+    "word_count": 42,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "When aircraft supplied electrical power returns to within the declared limits, the Engine Control System shall resume normal operation.",
+    "ears_template_label": "Event-driven requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "Low voltage transients outside of the power supply voltage limitations, declared under CS-E 50 (h)(3), shall meet the specifications of CS-E 50 (h)(1). The Engine Control System must resume normal operation when aircraft supplied electrical power returns to within the declared limits.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "Low voltage transients outside of the power supply voltage limitations, declared under CS-E 50 (h)(3), should meet the specifications of CS-E 50 (h)(1). The Engine Control System must resume normal operation when aircraft supplied electrical power returns to within the declared limits.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "Low voltage transients outside of the power supply voltage limitations, declared under CS-E 50 (h)(3), must meet the specifications of CS-E 50 (h)(1). The Engine Control System must resume normal operation when aircraft supplied electrical power returns to within the declared limits, and send a confirmation.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and send a confirmation",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and send a confirmation' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "As soon as aircraft supplied electrical power returns to within the declared limits, the Engine Control System shall resume normal operation.",
+    "master_template_label": "Functional requirement, EventMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 1,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 1
+    },
+    "probe_count": 3
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_21",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "The need for, and the characteristics of, any electrical power supplied from the aircraft to the Engine Control System for starting and operating the Engine, including transient and steady state voltage limits, must be identified and declared in the Engine instructions for installation.",
+    "word_count": 43,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The Engine Control System shall provide identification and declaration of the need for, and the characteristics of, any electrical power supplied from the aircraft to the Engine Control System for starting and operating the Engine, including transient and steady state voltage limits to the Engine instructions for installation.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "The need for, and the characteristics of, any electrical power supplied from the aircraft to the Engine Control System for starting and operating the Engine, including transient and steady state voltage limits, shall be identified and declared in the Engine instructions for installation.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The need for, and the characteristics of, any electrical power supplied from the aircraft to the Engine Control System for starting and operating the Engine, including transient and steady state voltage limits, should be identified and declared in the Engine instructions for installation.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The need for, and the characteristics of, any electrical power supplied from the aircraft to the Engine Control System for starting and operating the Engine, including transient and steady state voltage limits, must regardless of context be identified and declared in the Engine instructions for installation.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "regardless of context",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'regardless of context' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The DOA shall include steady state voltage limits to the characteristics of electrical power supplied from the aircraft to the Engine Control System for operating the Engine in the Engine instructions for installation.",
+    "master_template_label": "Process requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 1,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 1
+    },
+    "probe_count": 3
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_12",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "When complying with CS-E 210 or CS-E 510, a system safety assessment must be completed for the Engine Control System. This assessment must identify Faults or Failures that result in a change in thrust or power, a transmission of erroneous data, or an effect on Engine operability together with the predicted frequency of occurrence of these Faults or Failures.",
+    "word_count": 59,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "EventDriven",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "Where complying with CS-E 210 or CS-E 510, the Engine Control System shall complete a system safety assessment to identify Faults or Failures that result in a change in thrust or power, a transmission of erroneous data, or an effect on Engine operability together with the predicted frequency of occurrence of these Faults or Failures.",
+    "ears_template_label": "Optional requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "Once complying with CS-E 210 or CS-E 510, a system safety assessment must be completed for the Engine Control System. This assessment must identify Faults or Failures that result in a change in thrust or power, a transmission of erroneous data, or an effect on Engine operability together with the predicted frequency of occurrence of these Faults or Failures.",
+        "expected_relation": "stable",
+        "operation": "rule_condition_syn",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "condition_syn",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "When complying with CS-E 210 or CS-E 510, a system safety assessment shall be completed for the Engine Control System. This assessment must identify Faults or Failures that result in a change in thrust or power, a transmission of erroneous data, or an effect on Engine operability together with the predicted frequency of occurrence of these Faults or Failures.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "When complying with CS-E 210 or CS-E 510, a system safety assessment should be completed for the Engine Control System. This assessment must identify Faults or Failures that result in a change in thrust or power, a transmission of erroneous data, or an effect on Engine operability together with the predicted frequency of occurrence of these Faults or Failures.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "When complying with CS-E 210 or CS-E 510 momentarily, a system safety assessment must be completed for the Engine Control System. This assessment must identify Faults or Failures that result in a change in thrust or power, a transmission of erroneous data, or an effect on Engine operability together with the predicted frequency of occurrence of these Faults or Failures.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "momentarily",
+        "distractor_category": "retry_trigger",
+        "hallucination_risk": "hallucinate retry or recovery action",
+        "description": "Distractor 'momentarily' targets: hallucinate retry or recovery action",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "As soon as the system safety assessment identifies faults or failures, the system safety assessment shall identify the predicted frequency of occurrence of these Faults or Failures.",
+    "master_template_label": "Functional requirement, EventMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_CS_E 50_13",
+    "source": "Grosser",
+    "document_id": "CS_E 50",
+    "requirement_text": "When electronic over-speed protection systems are provided, the design must include a means for testing the system to establish the A13:A15 availability of the protection function. The means must be such that a complete test of the system can be achieved in the minimum number of cycles. If the test is not fully automatic, the specification for a manual test must be contained in the Engine instructions for operation.",
+    "word_count": 69,
+    "modal": "must",
+    "modal_strength": 3,
+    "ears_type": "EventDriven",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "If the test of the A13:A15 availability of the over-speed protection is not fully automatic, the Engine Control System shall provide a specification for a manual test in the Engine instructions for operation.",
+    "ears_template_label": "Unwanted behaviour",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "When electronic over-speed protection systems are provided, the design shall include a means for testing the system to establish the A13:A15 availability of the protection function. The means must be such that a complete test of the system can be achieved in the minimum number of cycles. If the test is not fully automatic, the specification for a manual test must be contained in the Engine instructions for operation.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "Once electronic over-speed protection systems are provided, the design must include a means for testing the system to establish the A13:A15 availability of the protection function. The means must be such that a complete test of the system can be achieved in the minimum number of cycles. If the test is not fully automatic, the specification for a manual test must be contained in the Engine instructions for operation.",
+        "expected_relation": "stable",
+        "operation": "rule_condition_syn",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "condition_syn",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "When electronic over-speed protection systems are provided, the design should include a means for testing the system to establish the A13:A15 availability of the protection function. The means must be such that a complete test of the system can be achieved in the minimum number of cycles. If the test is not fully automatic, the specification for a manual test must be contained in the Engine instructions for operation.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "must",
+        "new_modal": "should",
+        "description": "Modal weakened: 'must' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "When electronic over-speed protection systems are provided, the design must include a means for testing the system to establish the A13:A15 availability of the protection function. The means must be such that a complete test of the system can be achieved in the minimum number of cycles. If the test is not fully automatic, the specification for a manual test must be contained in the Engine instructions for operation, and notify the administrator.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "and notify the administrator",
+        "distractor_category": "response_trigger",
+        "hallucination_risk": "hallucinate additional system response",
+        "description": "Distractor 'and notify the administrator' targets: hallucinate additional system response",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "If the over-speed protection availability test is not fully automatic, the DOA shall provide the specification for a manual test in the Engine instructions for operation.",
+    "master_template_label": "Process requirement, LogicMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_ECSS_E60-30_14",
+    "source": "Grosser",
+    "document_id": "ECSS_E60-30",
+    "requirement_text": "The AOCS shall define a strategy for the implementation of the mode transitions and describe how this strategy is applied for each AOCS mode transition.",
+    "word_count": 25,
+    "modal": "shall",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The AOCS shall define a strategy for the implementation of the mode transitions and describe how this strategy is applied for each AOCS mode transition.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The AOCS define a strategy for the implementation of the mode transitions and describe how this strategy is applied for each AOCS mode transition.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.12
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "The AOCS must define a strategy for the implementation of the mode transitions and describe how this strategy is applied for each AOCS mode transition.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The AOCS should define a strategy for the implementation of the mode transitions and describe how this strategy is applied for each AOCS mode transition.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "shall",
+        "new_modal": "should",
+        "description": "Modal weakened: 'shall' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The AOCS shall under all circumstances define a strategy for the implementation of the mode transitions and describe how this strategy is applied for each AOCS mode transition.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "under all circumstances",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'under all circumstances' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The AOCS shall describe how the implementation strategy is applied for each AOCS mode transition.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_ECSS_E60-30_33",
+    "source": "Grosser",
+    "document_id": "ECSS_E60-30",
+    "requirement_text": "The AOCS shall identify for every propulsion-based AOCS mode, the number of pulses commanded to the thruster, the associated pulse profiles and the total impulse.",
+    "word_count": 25,
+    "modal": "shall",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The AOCS shall identify for every propulsion-based AOCS mode, the number of pulses commanded to the thruster, the associated pulse profiles and the total impulse.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "The AOCS is required to identify for every propulsion-based AOCS mode, the number of pulses commanded to the thruster, the associated pulse profiles and the total impulse.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.08
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The AOCS identify for every propulsion-based AOCS mode, the number of pulses commanded to the thruster, the associated pulse profiles and the total impulse.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.12
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The AOCS should identify for every propulsion-based AOCS mode, the number of pulses commanded to the thruster, the associated pulse profiles and the total impulse.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "shall",
+        "new_modal": "should",
+        "description": "Modal weakened: 'shall' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The AOCS shall at all times identify for every propulsion-based AOCS mode, the number of pulses commanded to the thruster, the associated pulse profiles and the total impulse.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "at all times",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'at all times' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The AOCS shall identify the total impulse for every propulsion-based AOCS mode.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_ECSS_E60-30_1",
+    "source": "Grosser",
+    "document_id": "ECSS_E60-30",
+    "requirement_text": "The AOCS shall provide the hardware and software capabilities and performances, to perform the attitude measurement, estimation, guidance and control needed for the mission.",
+    "word_count": 24,
+    "modal": "shall",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The AOCS shall provide capabilities to perform the attitude measurement, estimation, guidance and control needed for the mission.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "The AOCS is required to provide the hardware and software capabilities and performances, to perform the attitude measurement, estimation, guidance and control needed for the mission.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.08
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The AOCS provide the hardware and software capabilities and performances, to perform the attitude measurement, estimation, guidance and control needed for the mission.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.12
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The AOCS should provide the hardware and software capabilities and performances, to perform the attitude measurement, estimation, guidance and control needed for the mission.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "shall",
+        "new_modal": "should",
+        "description": "Modal weakened: 'shall' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The AOCS shall regardless of context provide the hardware and software capabilities and performances, to perform the attitude measurement, estimation, guidance and control needed for the mission.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "regardless of context",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'regardless of context' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The AOCS shall be able to perform the control needed for the mission.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_ECSS_E60-30_11",
+    "source": "Grosser",
+    "document_id": "ECSS_E60-30",
+    "requirement_text": "In case of major anomaly, the AOCS shall provide the autonomous capability to ensure the integrity of the spacecraft vital functions, including power, thermal and communications.",
+    "word_count": 26,
+    "modal": "shall",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "If a major anomaly occurs, then the AOCS shall provide the autonomous capability to ensure the integrity of the spacecraft vital functions.",
+    "ears_template_label": "Unwanted behaviour",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that In case of major anomaly, the AOCS provide the autonomous capability to ensure the integrity of the spacecraft vital functions, including power, thermal and communications.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.12
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "In case of major anomaly, the AOCS must provide the autonomous capability to ensure the integrity of the spacecraft vital functions, including power, thermal and communications.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "In case of major anomaly, the AOCS should provide the autonomous capability to ensure the integrity of the spacecraft vital functions, including power, thermal and communications.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "shall",
+        "new_modal": "should",
+        "description": "Modal weakened: 'shall' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "In case of major anomaly, the AOCS shall at all times provide the autonomous capability to ensure the integrity of the spacecraft vital functions, including power, thermal and communications.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "at all times",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'at all times' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "As soon as a major anomaly happens, the AOCS shall ensure the integrity of the spacecraft vital functions.",
+    "master_template_label": "Functional requirement, EventMASTeR",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_ECSS_E60-30_27",
+    "source": "Grosser",
+    "document_id": "ECSS_E60-30",
+    "requirement_text": "The AOCS shall provide to satellite FDIR, for the purpose of failure monitoring, parameters observed on AOCS units or derived from AOCS embedded algorithms.",
+    "word_count": 24,
+    "modal": "shall",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The AOCS shall provide to satellite FDIR parameters observed on AOCS units or derived from AOCS embedded algorithms for failure monitoring.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The AOCS provide to satellite FDIR, for the purpose of failure monitoring, parameters observed on AOCS units or derived from AOCS embedded algorithms.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.12
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "The AOCS must provide to satellite FDIR, for the purpose of failure monitoring, parameters observed on AOCS units or derived from AOCS embedded algorithms.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.0
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The AOCS should provide to satellite FDIR, for the purpose of failure monitoring, parameters observed on AOCS units or derived from AOCS embedded algorithms.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "shall",
+        "new_modal": "should",
+        "description": "Modal weakened: 'shall' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The AOCS shall temporarily provide to satellite FDIR, for the purpose of failure monitoring, parameters observed on AOCS units or derived from AOCS embedded algorithms.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "temporarily",
+        "distractor_category": "retry_trigger",
+        "hallucination_risk": "hallucinate retry or recovery action",
+        "description": "Distractor 'temporarily' targets: hallucinate retry or recovery action",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The AOCS shall provide parameters derived from AOCS embedded algorithms to satellite FDIR for failure monitoring.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  },
+  {
+    "item_id": "GROSSER_ECSS_E60-30_5",
+    "source": "Grosser",
+    "document_id": "ECSS_E60-30",
+    "requirement_text": "The AOCS shall provide during all phases of the mission the capability to acquire and keep all attitudes necessary to perform the mission.",
+    "word_count": 23,
+    "modal": "shall",
+    "modal_strength": 3,
+    "ears_type": "Ubiquitous",
+    "priority": null,
+    "extraction_method": "aligned_pair",
+    "target_norm": "EARS",
+    "reference_rewrite": "The AOCS shall provide the capability to acquire and keep all attitudes necessary to perform the mission during all phases of the mission.",
+    "ears_template_label": "Ubiquitous requirement",
+    "probe_neighborhoods": [
+      {
+        "probe_id": "INV_1",
+        "probe_family": "invariance",
+        "probe_text": "It is required that The AOCS provide during all phases of the mission the capability to acquire and keep all attitudes necessary to perform the mission.",
+        "expected_relation": "stable",
+        "operation": "rule_subject_rephrase",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "subject_rephrase",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.13
+        }
+      },
+      {
+        "probe_id": "INV_2",
+        "probe_family": "invariance",
+        "probe_text": "The AOCS is required to provide during all phases of the mission the capability to acquire and keep all attitudes necessary to perform the mission.",
+        "expected_relation": "stable",
+        "operation": "rule_modal_synonym",
+        "generation_method": "rule_only",
+        "scoring": {
+          "criterion": "output stays semantically aligned with same modal strength",
+          "pass": 1,
+          "fail": 0
+        },
+        "validation": {
+          "rule_operation": "modal_synonym",
+          "llm_verified": false,
+          "modal_preserved": true,
+          "length_ratio": 1.09
+        }
+      },
+      {
+        "probe_id": "DIR_1",
+        "probe_family": "directional",
+        "probe_text": "The AOCS should provide during all phases of the mission the capability to acquire and keep all attitudes necessary to perform the mission.",
+        "expected_relation": "directional",
+        "operation": "modal_substitution",
+        "direction": "weaken",
+        "original_modal": "shall",
+        "new_modal": "should",
+        "description": "Modal weakened: 'shall' → 'should'",
+        "scoring": {
+          "criterion": "output shifts in same direction as modal change — does not collapse the distinction",
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      {
+        "probe_id": "SHC_1",
+        "probe_family": "shortcut",
+        "probe_text": "The AOCS shall at all times provide during all phases of the mission the capability to acquire and keep all attitudes necessary to perform the mission.",
+        "expected_relation": "no_shortcut",
+        "operation": "distractor_insertion",
+        "distractor": "at all times",
+        "distractor_category": "scope_trigger",
+        "hallucination_risk": "hallucinate scope expansion to all cases",
+        "description": "Distractor 'at all times' targets: hallucinate scope expansion to all cases",
+        "scoring": {
+          "criterion": "model does NOT hallucinate extra behavior from distractor",
+          "pass": 1,
+          "fail": 0
+        }
+      }
+    ],
+    "master_rewrite": "The AOCS shall be able to acquire and keep all attitudes necessary to perform the mission.",
+    "master_template_label": "Functional requirement",
+    "fully_aligned": true,
+    "probe_stats": {
+      "invariance": 2,
+      "directional": 1,
+      "shortcut": 1,
+      "failed": 0
+    },
+    "probe_count": 4
+  }
+]

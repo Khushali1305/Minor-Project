@@ -1,0 +1,104 @@
+[
+  {
+    "item_id": "TSAR_02-a2",
+    "dataset": "TSAR2025",
+    "original": "Earthquakes damage all structures, including bridges. Luckily, this kind of collapse is relatively infrequent, especially with modern bridges. Engineers have learned to design bridges in earthquake zones on areas that are much more resistant to movement.",
+    "source_level": "b2+",
+    "target_level": "a2",
+    "references": [
+      "An earthquake means when the ground shakes a lot. Earthquakes can make buildings fall down, including bridges. Luckily, modern bridges don't fall down very often. In earthquake areas, engineers now choose to build bridges in places that do not move so much."
+    ],
+    "n_references": 1,
+    "text_length_words": 36,
+    "text_length_chars": 254,
+    "suitable_for_probing": true,
+    "probe_roles": [
+      "invariance",
+      "directional",
+      "shortcut"
+    ],
+    "provenance": "TSAR2025_trial_tsar2025trial",
+    "example_role": "TSAR_a2_target"
+  },
+  {
+    "item_id": "TSAR_02-b1",
+    "dataset": "TSAR2025",
+    "original": "Earthquakes damage all structures, including bridges. Luckily, this kind of collapse is relatively infrequent, especially with modern bridges. Engineers have learned to design bridges in earthquake zones on areas that are much more resistant to movement.",
+    "source_level": "b2+",
+    "target_level": "b1",
+    "references": [
+      "Earthquakes damage all kinds of buildings, including bridges. Luckily, however, bridges, especially modern ones, are not often completely destroyed. Engineers have learned to design bridges in earthquake zones on ground that moves less during earthquakes."
+    ],
+    "n_references": 1,
+    "text_length_words": 36,
+    "text_length_chars": 254,
+    "suitable_for_probing": true,
+    "probe_roles": [
+      "invariance",
+      "directional",
+      "shortcut"
+    ],
+    "provenance": "TSAR2025_trial_tsar2025trial",
+    "example_role": "TSAR_b1_target"
+  },
+  {
+    "example_role": "TSAR_dual_target_pair",
+    "a2_item_id": "TSAR_01-a2",
+    "b1_item_id": "TSAR_01-b1",
+    "original_preview": "Now NASA is working towards logging some of the smaller asteroids, those measuring 140 metres wide or more. Of the 25,00",
+    "a2_reference_preview": "Asteroids are small rocks in space. NASA is collecting information about middle-sized asteroids (bigger than 140 metres ",
+    "b1_reference_preview": "Asteroids are rocks that fly through space. NASA is recording data about some quite small asteroids (ones that are still"
+  },
+  {
+    "example_role": "OSE_adv_to_intermediate",
+    "item_id": "OSE_002_adv2int",
+    "original_preview": "They are the darkness seekers \u2013 and they are growing in number. On Black Fell, looking down on Northumberland\u2019s beautiful Kielder Water reservoir, a group of people wait in a car park next to a strang",
+    "original_words": 862,
+    "reference_preview": "Intermediate What surprised researchers was not how hard people found the challenge but how far they would go to avoid it. The task? To sit in a chair and do nothing but think. Some found it so unbear",
+    "reference_words": 613
+  },
+  {
+    "example_role": "OSE_adv_to_elementary",
+    "item_id": "OSE_002_adv2ele",
+    "original_preview": "They are the darkness seekers \u2013 and they are growing in number. On Black Fell, looking down on Northumberland\u2019s beautiful Kielder Water reservoir, a group of people wait in a car park next to a strang",
+    "original_words": 862,
+    "reference_preview": "Scientists have put a false memory in the brains of mice in an experiment. They hopethe results of the experiment will help to explain why people \u201cremember\u201d things that never happened. False memories ",
+    "reference_words": 576
+  },
+  {
+    "example_role": "ASSET_short_sentence",
+    "item_id": "ASSET_test_0231",
+    "original": "The wounds inflicted by a club are generally known as bludgeoning or blunt-force trauma injuries.",
+    "text_length_words": 15,
+    "n_references": 10,
+    "reference_sample_1": "Wounds inflicted by a club are known as bludgeoning or blunt-force trauma injuries.",
+    "reference_sample_2": "The wounds made by a club are called bludgeoning.  They can also be called blunt-force trauma injuries."
+  },
+  {
+    "example_role": "ASSET_medium_sentence",
+    "item_id": "ASSET_val_0073",
+    "original": "The French word bourgeois evolved from the Old French word burgeis, meaning \"an inhabitant of a town\" (cf.",
+    "text_length_words": 18,
+    "n_references": 10,
+    "reference_sample_1": "The French word bourgeois came from the Old French word burgeis, meaning \"an inhabitant of a town\".",
+    "reference_sample_2": "the word bourgeois came from the French word burgeis. It means \"an inhabitant of a town\"."
+  },
+  {
+    "example_role": "ASSET_long_sentence",
+    "item_id": "ASSET_val_1952",
+    "original": "During the early 1960s, Love first crossed paths with Jim Henson through Don Sahlin, who urged him to meet with Henson.",
+    "text_length_words": 21,
+    "n_references": 10,
+    "reference_sample_1": "Love first crossed paths with Jim Henson through Don Sahlin in the early 1960's.  Sahlin urged Love to meet with Henson.",
+    "reference_sample_2": "In 1960s, Love first met Jim Henson. Don Sahlin urged him to meet with Henson."
+  },
+  {
+    "example_role": "ASSET_complex_sentence",
+    "item_id": "ASSET_val_0759",
+    "original": "The BCG matrix (aka B. C. G. analysis, BCG-matrix, Boston Box, Boston Matrix, Boston Consulting Group analysis) is a chart that had been created by Bruce Henderson for the Boston Consulting Group in 1970 to help corporations with analyzing their business units or product lines.",
+    "text_length_words": 45,
+    "n_references": 10,
+    "reference_sample_1": "The BCG matrix was created by Bruce Henderson for the Boston Consulting Group in 1970. It was created to help corporations with analyzing their business units or product lines.",
+    "reference_sample_2": "The BCG matrix is a chart that was created by Bruce Henderson for the Boston Consulting Group to help companies analyze their business data and product lines."
+  }
+]

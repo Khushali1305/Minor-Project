@@ -1,0 +1,29 @@
+{
+  "dataset": "GrosserBenchmark",
+  "total_free_reqs": 249,
+  "fully_aligned": 249,
+  "has_ears": 249,
+  "has_master": 249,
+  "project_distribution": {
+    "CS_E 50": 25,
+    "ECSS_E60-30": 33,
+    "EVS": 110,
+    "FLEX": 18,
+    "TSS": 63
+  },
+  "ears_label_distribution": {
+    "Ubiquitous requirement": 178,
+    "Unwanted behaviour": 17,
+    "State-driven requirement": 6,
+    "Optional requirement": 4,
+    "Event-driven requirement": 29,
+    "optional requirement": 3,
+    "state driven": 2,
+    "Option": 2,
+    "state-driven requirement": 3,
+    "option": 2,
+    "Event -driven": 1,
+    "State requirement": 1,
+    "Optional Feature": 1
+  }
+}

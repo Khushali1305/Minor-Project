@@ -1,0 +1,24 @@
+{
+  "dataset": "PROMISE_exp",
+  "total_records": 969,
+  "fr_count": 444,
+  "nfr_count": 525,
+  "class_distribution": {
+    "PE": 67,
+    "LF": 49,
+    "US": 85,
+    "A": 31,
+    "SE": 125,
+    "F": 444,
+    "FT": 18,
+    "SC": 22,
+    "PO": 12,
+    "O": 77,
+    "L": 15,
+    "MN": 24
+  },
+  "project_count": 47,
+  "word_count_mean": 17.91,
+  "word_count_median": 15,
+  "parse_errors": 0
+}

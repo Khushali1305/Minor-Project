@@ -1,0 +1,76 @@
+{
+  "version": "v4_final",
+  "filter_rules_applied": 32,
+  "total_items": 904,
+  "source_distribution": {
+    "Grosser": 219,
+    "PURE": 600,
+    "PROMISE_exp": 85
+  },
+  "modal_distribution": {
+    "must": 67,
+    "should": 118,
+    "shall": 352,
+    "will": 221,
+    "may": 48,
+    "can": 98
+  },
+  "ears_distribution": {
+    "Ubiquitous": 502,
+    "EventDriven": 17,
+    "UnwantedBehavior": 28,
+    "unknown": 352,
+    "OptionalFeatures": 3,
+    "StateDriven": 2
+  },
+  "with_reference_rewrite": 219,
+  "fully_aligned": 219,
+  "word_count_mean": 22.73,
+  "word_count_median": 23,
+  "audit_history": {
+    "v1_accept_rate": "84%",
+    "v2_accept_rate": "44%",
+    "v3_accept_rate": "~65%",
+    "v4_target": ">88%"
+  },
+  "rejection_breakdown": {
+    "grosser": {
+      "pronoun_subject": 7,
+      "duplicate": 18,
+      "word_count": 3,
+      "doc_management_statement": 2
+    },
+    "pure": {
+      "doc_header_noise": 143,
+      "pronoun_subject": 812,
+      "word_count": 566,
+      "context_opener": 141,
+      "no_modal_verb": 221,
+      "duplicate": 322,
+      "table_row_dump": 13,
+      "modal_strength_0": 155,
+      "metadata_template_dump": 16,
+      "truncated_list": 211,
+      "external_reference": 466,
+      "citation_prose": 12,
+      "glossary_definition": 75,
+      "section_tag_merge": 53,
+      "use_case_scenario": 1,
+      "ocr_corruption": 9,
+      "versioning_statement": 2,
+      "doc_management_statement": 2,
+      "user_intention_not_req": 16,
+      "second_person_subject": 15,
+      "non_system_statement": 3,
+      "doc_authoring_instruction": 2,
+      "deleted_marker": 10,
+      "db_record_dump": 1
+    },
+    "promise": {
+      "no_modal_verb": 10,
+      "word_count": 7,
+      "pronoun_subject": 2,
+      "duplicate": 5
+    }
+  }
+}

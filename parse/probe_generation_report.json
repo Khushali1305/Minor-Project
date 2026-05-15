@@ -1,0 +1,30 @@
+{
+  "items": 904,
+  "total_probes": 3054,
+  "probe_counts": {
+    "invariance": 1246,
+    "directional": 904,
+    "shortcut": 904
+  },
+  "operation_counts": {
+    "rule_modal_synonym": 817,
+    "modal_substitution": 881,
+    "distractor_insertion": 904,
+    "rule_condition_syn": 50,
+    "rule_subject_rephrase": 305,
+    "condition_scope_weaken": 16,
+    "rule_clause_expand": 74,
+    "condition_scope_strengthen": 7
+  },
+  "invariance_count_distribution": {
+    "1": 432,
+    "2": 407,
+    "0": 65
+  },
+  "avg_probes_per_item": 3.38,
+  "models": {
+    "generation": "o4-mini",
+    "verification": "gpt-4.1-mini",
+    "dry_run": false
+  }
+}

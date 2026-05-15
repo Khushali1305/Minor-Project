@@ -1,0 +1,270 @@
+{
+  "name": "NFR-ShortcutMiniBench-v1",
+  "description": "Standalone supplementary benchmark of 18 NFR-flavoured shortcut probes. Each probe inserts a non-functional requirement distractor into a clean functional requirement. A reliable corrector must not absorb the NFR clause into its structural rewrite. Reported separately from SRS-ProbeCore-v5 to avoid scoring ambiguity in the main benchmark. See Choice 3 rationale in project notes.",
+  "total_probes": 18,
+  "nfr_categories": [
+    "performance_trigger",
+    "security_trigger",
+    "availability_trigger",
+    "fault_tolerance_trigger",
+    "scalability_trigger",
+    "usability_trigger",
+    "maintainability_trigger",
+    "compliance_trigger"
+  ],
+  "scoring_criterion": "model does NOT introduce the NFR category implied by the distractor into the structural rewrite of the base requirement",
+  "probes": [
+    {
+      "probe_id": "NFR_SHC_1",
+      "nfr_category": "performance_trigger",
+      "source_item_id": "PROMISE_17_0056",
+      "base_text": "The system shall validate the amount is a multiple of $20.",
+      "probe_text": "The system shall validate the amount is a multiple of $20 within 200 milliseconds.",
+      "distractor": "within 200 milliseconds",
+      "hallucination_risk": "hallucinate a response-time constraint into the validation rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any performance or timing clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_2",
+      "nfr_category": "performance_trigger",
+      "source_item_id": "PROMISE_45_0101",
+      "base_text": "The system shall authenticate users at the beginning of each session.",
+      "probe_text": "The system shall authenticate users at the beginning of each session with a maximum latency of 500ms.",
+      "distractor": "with a maximum latency of 500ms",
+      "hallucination_risk": "hallucinate a latency bound into the authentication rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any latency or timing clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_3",
+      "nfr_category": "performance_trigger",
+      "source_item_id": "PROMISE_4_0018",
+      "base_text": "The Disputes System must be accessible by both internal and external users.",
+      "probe_text": "The Disputes System must be accessible by both internal and external users, supporting up to 500 concurrent users.",
+      "distractor": "supporting up to 500 concurrent users",
+      "hallucination_risk": "hallucinate a concurrent-user load constraint into the access rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any concurrency or load clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_4",
+      "nfr_category": "security_trigger",
+      "source_item_id": "PROMISE_20_0065",
+      "base_text": "Users shall be required to log in to the Cafeteria Ordering System for all operations except viewing a menu.",
+      "probe_text": "Users shall be required to log in to the Cafeteria Ordering System for all operations except viewing a menu, using two-factor authentication.",
+      "distractor": "using two-factor authentication",
+      "hallucination_risk": "hallucinate a specific authentication mechanism into the login rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any authentication mechanism or security protocol",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_5",
+      "nfr_category": "security_trigger",
+      "source_item_id": "PROMISE_17_0058",
+      "base_text": "The system shall validate the amount is available in the user account before releasing funds to the user.",
+      "probe_text": "The system shall validate the amount is available in the user account before releasing funds to the user over an encrypted channel.",
+      "distractor": "over an encrypted channel",
+      "hallucination_risk": "hallucinate a transport encryption constraint into the financial validation rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any encryption or transport security clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_6",
+      "nfr_category": "security_trigger",
+      "source_item_id": "PROMISE_32_0079",
+      "base_text": "The user must be able to set an option to hide information based on who has tagged it.",
+      "probe_text": "The user must be able to set an option to hide information based on who has tagged it, in compliance with the access control policy.",
+      "distractor": "in compliance with the access control policy",
+      "hallucination_risk": "hallucinate a policy compliance clause into the user-preference rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any policy compliance or access control reference",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_7",
+      "nfr_category": "availability_trigger",
+      "source_item_id": "PROMISE_16_0051",
+      "base_text": "The system shall support the ability to perform a send only operation.",
+      "probe_text": "The system shall support the ability to perform a send only operation with 99.9% uptime guarantee.",
+      "distractor": "with 99.9% uptime guarantee",
+      "hallucination_risk": "hallucinate an availability SLA into the capability rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any availability percentage or SLA clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_8",
+      "nfr_category": "availability_trigger",
+      "source_item_id": "PURE_2007 - ertms_S0018",
+      "base_text": "E ETCS trainborne equipment shall be capable of receiving information from the national train control system.",
+      "probe_text": "E ETCS trainborne equipment shall be capable of receiving information from the national train control system at all times including degraded mode operation.",
+      "distractor": "at all times including degraded mode operation",
+      "hallucination_risk": "hallucinate a continuous availability and degraded-mode constraint into the capability rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any continuous-availability or degraded-mode clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_9",
+      "nfr_category": "fault_tolerance_trigger",
+      "source_item_id": "PROMISE_2_0008",
+      "base_text": "The system shall be able to call the seller or buyer to schedule an appointment.",
+      "probe_text": "The system shall be able to call the seller or buyer to schedule an appointment, with automatic retry on connection failure.",
+      "distractor": "with automatic retry on connection failure",
+      "hallucination_risk": "hallucinate a fault-tolerance retry mechanism into the calling requirement rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any retry, recovery, or fault-tolerance clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_10",
+      "nfr_category": "fault_tolerance_trigger",
+      "source_item_id": "PROMISE_9_0042",
+      "base_text": "The leads washing functionality will validate all leads received by the web service for valid data.",
+      "probe_text": "The leads washing functionality will validate all leads received by the web service for valid data and log all failures to a persistent error store.",
+      "distractor": "and log all failures to a persistent error store",
+      "hallucination_risk": "hallucinate an error-logging and persistence clause into the validation rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any error logging or persistence clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_11",
+      "nfr_category": "scalability_trigger",
+      "source_item_id": "PROMISE_47_0107",
+      "base_text": "The system shall allow the user to register for an account from any page in the system.",
+      "probe_text": "The system shall allow the user to register for an account from any page in the system without degradation under peak load.",
+      "distractor": "without degradation under peak load",
+      "hallucination_risk": "hallucinate a scalability constraint into the registration capability rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any load, scaling, or peak-traffic clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_12",
+      "nfr_category": "scalability_trigger",
+      "source_item_id": "PROMISE_8_0039",
+      "base_text": "Website shall allow customers to add their own movie review for a selected movie.",
+      "probe_text": "Website shall allow customers to add their own movie review for a selected movie for up to 10,000 simultaneous submissions.",
+      "distractor": "for up to 10,000 simultaneous submissions",
+      "hallucination_risk": "hallucinate a concurrent submission capacity constraint into the contribution rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any concurrency limit or scale bound",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_13",
+      "nfr_category": "usability_trigger",
+      "source_item_id": "PROMISE_33_0083",
+      "base_text": "The system should ask the user to key in the pickup date.",
+      "probe_text": "The system should ask the user to key in the pickup date within no more than two interaction steps.",
+      "distractor": "within no more than two interaction steps",
+      "hallucination_risk": "hallucinate an interaction-step efficiency constraint into the data-entry rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any interaction-step count or usability efficiency clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_14",
+      "nfr_category": "usability_trigger",
+      "source_item_id": "PROMISE_45_0098",
+      "base_text": "The system shall allow the user to modify the date preference set of an already submitted meeting response.",
+      "probe_text": "The system shall allow the user to modify the date preference set of an already submitted meeting response through an intuitive and self-explanatory interface.",
+      "distractor": "through an intuitive and self-explanatory interface",
+      "hallucination_risk": "hallucinate a UI quality attribute into the modification capability rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any UI quality or usability attribute",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_15",
+      "nfr_category": "maintainability_trigger",
+      "source_item_id": "PROMISE_7_0034",
+      "base_text": "The System shall generate Inventory Quantity Adjustment document automatically when daily Product Sales data is available.",
+      "probe_text": "The System shall generate Inventory Quantity Adjustment document automatically when daily Product Sales data is available, without requiring changes to the core application code.",
+      "distractor": "without requiring changes to the core application code",
+      "hallucination_risk": "hallucinate a maintainability constraint into the document-generation rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any code-change restriction or maintainability clause",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_16",
+      "nfr_category": "maintainability_trigger",
+      "source_item_id": "PROMISE_45_0099",
+      "base_text": "The system shall allow the initiator to send and receive messages from users.",
+      "probe_text": "The system shall allow the initiator to send and receive messages from users using a pluggable messaging module that can be replaced independently.",
+      "distractor": "using a pluggable messaging module that can be replaced independently",
+      "hallucination_risk": "hallucinate an architectural modularity constraint into the messaging capability rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any modularity, pluggability, or architectural constraint",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_17",
+      "nfr_category": "compliance_trigger",
+      "source_item_id": "PROMISE_20_0066",
+      "base_text": "The system shall permit only cafeteria staff members who are on the list of authorized Menu Managers to create or edit menus.",
+      "probe_text": "The system shall permit only cafeteria staff members who are on the list of authorized Menu Managers to create or edit menus, in accordance with data protection regulations.",
+      "distractor": "in accordance with data protection regulations",
+      "hallucination_risk": "hallucinate a regulatory compliance clause into the access-control rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any regulatory or legal compliance reference",
+        "pass": 1,
+        "fail": 0
+      }
+    },
+    {
+      "probe_id": "NFR_SHC_18",
+      "nfr_category": "compliance_trigger",
+      "source_item_id": "PROMISE_5_0024",
+      "base_text": "The ratings shall include categories for attempted use of recycled parts and actual use of recycled parts.",
+      "probe_text": "The ratings shall include categories for attempted use of recycled parts and actual use of recycled parts, as required by environmental compliance standards.",
+      "distractor": "as required by environmental compliance standards",
+      "hallucination_risk": "hallucinate an environmental regulatory constraint into the rating requirement rewrite",
+      "scoring": {
+        "criterion": "model does NOT introduce any environmental or compliance standard reference",
+        "pass": 1,
+        "fail": 0
+      }
+    }
+  ]
+}

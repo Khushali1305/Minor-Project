@@ -1,0 +1,724 @@
+{
+  "dataset": "PURE",
+  "version": "v2",
+  "documents_parsed": 78,
+  "id_split_docs": 5,
+  "sentence_split_docs": 73,
+  "total_records": 12091,
+  "requirement_like": 12033,
+  "requirement_like_pct": 99.5,
+  "word_count_mean": 23.88,
+  "word_count_distribution": {
+    "21-50": 5261,
+    "01-20": 6125,
+    "51-80": 705
+  },
+  "extraction_method_distribution": {
+    "sentence_split": 12001,
+    "id_split": 90
+  },
+  "per_document": [
+    {
+      "doc_id": "0000 - cctns",
+      "page_count": 19,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 143,
+      "req_like_count": 143,
+      "word_count_mean": 25.4
+    },
+    {
+      "doc_id": "0000 - gamma j",
+      "page_count": 44,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 87,
+      "req_like_count": 87,
+      "word_count_mean": 22.4
+    },
+    {
+      "doc_id": "0000 - inventory",
+      "page_count": 31,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 49,
+      "req_like_count": 49,
+      "word_count_mean": 22.1
+    },
+    {
+      "doc_id": "1995 - gemini",
+      "page_count": 96,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 484,
+      "req_like_count": 484,
+      "word_count_mean": 22.5
+    },
+    {
+      "doc_id": "1998 - themas",
+      "page_count": 40,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 84,
+      "req_like_count": 84,
+      "word_count_mean": 31.8
+    },
+    {
+      "doc_id": "1999 - dii",
+      "page_count": 23,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 56,
+      "req_like_count": 56,
+      "word_count_mean": 20.6
+    },
+    {
+      "doc_id": "1999 - multi-mahjong",
+      "page_count": 34,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 6,
+      "records_extracted": 169,
+      "req_like_count": 169,
+      "word_count_mean": 23.9
+    },
+    {
+      "doc_id": "1999 - tcs",
+      "page_count": 148,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 6,
+      "records_extracted": 805,
+      "req_like_count": 805,
+      "word_count_mean": 25.0
+    },
+    {
+      "doc_id": "2000 - nasa x38",
+      "page_count": 99,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 3,
+      "records_extracted": 550,
+      "req_like_count": 550,
+      "word_count_mean": 21.0
+    },
+    {
+      "doc_id": "2001 - beyond",
+      "page_count": 44,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 136,
+      "req_like_count": 136,
+      "word_count_mean": 24.6
+    },
+    {
+      "doc_id": "2001 - ctc network",
+      "page_count": 32,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 105,
+      "req_like_count": 105,
+      "word_count_mean": 20.9
+    },
+    {
+      "doc_id": "2001 - elsfork",
+      "page_count": 69,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 141,
+      "req_like_count": 141,
+      "word_count_mean": 25.0
+    },
+    {
+      "doc_id": "2001 - esa",
+      "page_count": 17,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 66,
+      "req_like_count": 66,
+      "word_count_mean": 28.5
+    },
+    {
+      "doc_id": "2001 - hats",
+      "page_count": 56,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 236,
+      "req_like_count": 236,
+      "word_count_mean": 27.6
+    },
+    {
+      "doc_id": "2001 - libra",
+      "page_count": 21,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 80,
+      "req_like_count": 80,
+      "word_count_mean": 21.0
+    },
+    {
+      "doc_id": "2001 - npac",
+      "page_count": 499,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 1377,
+      "req_like_count": 1377,
+      "word_count_mean": 25.2
+    },
+    {
+      "doc_id": "2001 - space fractions",
+      "page_count": 9,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 65,
+      "req_like_count": 65,
+      "word_count_mean": 24.1
+    },
+    {
+      "doc_id": "2001 - telescope",
+      "page_count": 107,
+      "extraction_method": "id_split",
+      "req_ids_detected": 25,
+      "records_extracted": 27,
+      "req_like_count": 4,
+      "word_count_mean": 26.1
+    },
+    {
+      "doc_id": "2002 - evla back",
+      "page_count": 22,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 103,
+      "req_like_count": 103,
+      "word_count_mean": 26.5
+    },
+    {
+      "doc_id": "2002 - evla corr",
+      "page_count": 17,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 67,
+      "req_like_count": 67,
+      "word_count_mean": 30.1
+    },
+    {
+      "doc_id": "2002 - sce api",
+      "page_count": 94,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 3,
+      "records_extracted": 224,
+      "req_like_count": 224,
+      "word_count_mean": 26.8
+    },
+    {
+      "doc_id": "2003 - agentmom",
+      "page_count": 8,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 14,
+      "req_like_count": 14,
+      "word_count_mean": 34.9
+    },
+    {
+      "doc_id": "2003 - pnnl",
+      "page_count": 176,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 288,
+      "req_like_count": 288,
+      "word_count_mean": 24.2
+    },
+    {
+      "doc_id": "2003 - qheadache",
+      "page_count": 15,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 15,
+      "req_like_count": 15,
+      "word_count_mean": 22.1
+    },
+    {
+      "doc_id": "2003 - tachonet",
+      "page_count": 56,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 123,
+      "req_like_count": 123,
+      "word_count_mean": 26.7
+    },
+    {
+      "doc_id": "2004 - colorcast",
+      "page_count": 18,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 87,
+      "req_like_count": 87,
+      "word_count_mean": 20.0
+    },
+    {
+      "doc_id": "2004 - e-procurement",
+      "page_count": 44,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 52,
+      "req_like_count": 52,
+      "word_count_mean": 18.7
+    },
+    {
+      "doc_id": "2004 - grid bgc",
+      "page_count": 34,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 237,
+      "req_like_count": 237,
+      "word_count_mean": 14.5
+    },
+    {
+      "doc_id": "2004 - ijis",
+      "page_count": 30,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 12,
+      "req_like_count": 12,
+      "word_count_mean": 17.8
+    },
+    {
+      "doc_id": "2004 - jse",
+      "page_count": 50,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 80,
+      "req_like_count": 80,
+      "word_count_mean": 17.1
+    },
+    {
+      "doc_id": "2004 - philips",
+      "page_count": 16,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 36,
+      "req_like_count": 36,
+      "word_count_mean": 16.3
+    },
+    {
+      "doc_id": "2004 - rlcs",
+      "page_count": 66,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 197,
+      "req_like_count": 197,
+      "word_count_mean": 26.1
+    },
+    {
+      "doc_id": "2004 - sprat",
+      "page_count": 33,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 171,
+      "req_like_count": 171,
+      "word_count_mean": 20.5
+    },
+    {
+      "doc_id": "2004 - watcom gui",
+      "page_count": 54,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 172,
+      "req_like_count": 172,
+      "word_count_mean": 17.2
+    },
+    {
+      "doc_id": "2004 - watcom",
+      "page_count": 55,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 104,
+      "req_like_count": 104,
+      "word_count_mean": 15.7
+    },
+    {
+      "doc_id": "2005 - clarus high",
+      "page_count": 49,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 3,
+      "records_extracted": 237,
+      "req_like_count": 237,
+      "word_count_mean": 16.1
+    },
+    {
+      "doc_id": "2005 - clarus low",
+      "page_count": 99,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 10,
+      "records_extracted": 513,
+      "req_like_count": 513,
+      "word_count_mean": 17.9
+    },
+    {
+      "doc_id": "2005 - grid 3D",
+      "page_count": 15,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 25,
+      "req_like_count": 25,
+      "word_count_mean": 25.8
+    },
+    {
+      "doc_id": "2005 - microcare",
+      "page_count": 33,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 140,
+      "req_like_count": 140,
+      "word_count_mean": 20.8
+    },
+    {
+      "doc_id": "2005 - nenios",
+      "page_count": 25,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 150,
+      "req_like_count": 150,
+      "word_count_mean": 20.1
+    },
+    {
+      "doc_id": "2005 - phin",
+      "page_count": 16,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 33,
+      "req_like_count": 33,
+      "word_count_mean": 38.8
+    },
+    {
+      "doc_id": "2005 - pontis",
+      "page_count": 82,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 324,
+      "req_like_count": 324,
+      "word_count_mean": 26.7
+    },
+    {
+      "doc_id": "2005 - triangle",
+      "page_count": 23,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 76,
+      "req_like_count": 76,
+      "word_count_mean": 23.0
+    },
+    {
+      "doc_id": "2005 - znix",
+      "page_count": 20,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 55,
+      "req_like_count": 55,
+      "word_count_mean": 23.2
+    },
+    {
+      "doc_id": "2006 - eirene sys 15",
+      "page_count": 138,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 14,
+      "records_extracted": 191,
+      "req_like_count": 191,
+      "word_count_mean": 36.3
+    },
+    {
+      "doc_id": "2006 - stewards",
+      "page_count": 45,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 4,
+      "records_extracted": 173,
+      "req_like_count": 173,
+      "word_count_mean": 26.7
+    },
+    {
+      "doc_id": "2007 - central trading system",
+      "page_count": 17,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 37,
+      "req_like_count": 37,
+      "word_count_mean": 25.8
+    },
+    {
+      "doc_id": "2007 - e-store",
+      "page_count": 16,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 119,
+      "req_like_count": 119,
+      "word_count_mean": 13.0
+    },
+    {
+      "doc_id": "2007 - eirene fun 7",
+      "page_count": 97,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 151,
+      "req_like_count": 151,
+      "word_count_mean": 40.6
+    },
+    {
+      "doc_id": "2007 - ertms",
+      "page_count": 98,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 81,
+      "req_like_count": 81,
+      "word_count_mean": 35.9
+    },
+    {
+      "doc_id": "2007 - get real 0.2",
+      "page_count": 10,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 17,
+      "req_like_count": 17,
+      "word_count_mean": 28.2
+    },
+    {
+      "doc_id": "2007 - mdot",
+      "page_count": 56,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 4,
+      "records_extracted": 209,
+      "req_like_count": 209,
+      "word_count_mean": 22.1
+    },
+    {
+      "doc_id": "2007 - nde",
+      "page_count": 99,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 2,
+      "records_extracted": 295,
+      "req_like_count": 295,
+      "word_count_mean": 30.4
+    },
+    {
+      "doc_id": "2007 - nlm",
+      "page_count": 115,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 245,
+      "req_like_count": 245,
+      "word_count_mean": 20.2
+    },
+    {
+      "doc_id": "2007 - puget sound",
+      "page_count": 14,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 85,
+      "req_like_count": 85,
+      "word_count_mean": 23.2
+    },
+    {
+      "doc_id": "2007 - water use",
+      "page_count": 42,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 149,
+      "req_like_count": 149,
+      "word_count_mean": 33.4
+    },
+    {
+      "doc_id": "2008 - caiso",
+      "page_count": 11,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 13,
+      "req_like_count": 13,
+      "word_count_mean": 32.4
+    },
+    {
+      "doc_id": "2008 - keepass",
+      "page_count": 29,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 136,
+      "req_like_count": 136,
+      "word_count_mean": 20.8
+    },
+    {
+      "doc_id": "2008 - peering",
+      "page_count": 17,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 27,
+      "req_like_count": 27,
+      "word_count_mean": 28.0
+    },
+    {
+      "doc_id": "2008 - viper",
+      "page_count": 96,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 228,
+      "req_like_count": 228,
+      "word_count_mean": 10.8
+    },
+    {
+      "doc_id": "2008 - virtual ed",
+      "page_count": 49,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 201,
+      "req_like_count": 201,
+      "word_count_mean": 19.0
+    },
+    {
+      "doc_id": "2008 - vub",
+      "page_count": 40,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 92,
+      "req_like_count": 92,
+      "word_count_mean": 28.5
+    },
+    {
+      "doc_id": "2009 - email",
+      "page_count": 15,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 8,
+      "records_extracted": 27,
+      "req_like_count": 27,
+      "word_count_mean": 30.6
+    },
+    {
+      "doc_id": "2009 - gaia",
+      "page_count": 28,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 28,
+      "req_like_count": 28,
+      "word_count_mean": 22.0
+    },
+    {
+      "doc_id": "2009 - inventory 2.0",
+      "page_count": 62,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 283,
+      "req_like_count": 283,
+      "word_count_mean": 20.1
+    },
+    {
+      "doc_id": "2009 - library",
+      "page_count": 18,
+      "extraction_method": "id_split",
+      "req_ids_detected": 25,
+      "records_extracted": 16,
+      "req_like_count": 4,
+      "word_count_mean": 45.9
+    },
+    {
+      "doc_id": "2009 - model manager",
+      "page_count": 13,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 82,
+      "req_like_count": 82,
+      "word_count_mean": 21.6
+    },
+    {
+      "doc_id": "2009 - peazip",
+      "page_count": 34,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 52,
+      "req_like_count": 52,
+      "word_count_mean": 36.2
+    },
+    {
+      "doc_id": "2009 - peppol",
+      "page_count": 127,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 4,
+      "records_extracted": 576,
+      "req_like_count": 576,
+      "word_count_mean": 29.8
+    },
+    {
+      "doc_id": "2009 - video search",
+      "page_count": 14,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 79,
+      "req_like_count": 79,
+      "word_count_mean": 22.4
+    },
+    {
+      "doc_id": "2009 - warc III",
+      "page_count": 10,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 97,
+      "req_like_count": 97,
+      "word_count_mean": 23.1
+    },
+    {
+      "doc_id": "2010 - blit draft",
+      "page_count": 12,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 16,
+      "req_like_count": 16,
+      "word_count_mean": 30.9
+    },
+    {
+      "doc_id": "2010 - fishing",
+      "page_count": 49,
+      "extraction_method": "id_split",
+      "req_ids_detected": 6,
+      "records_extracted": 6,
+      "req_like_count": 5,
+      "word_count_mean": 21.2
+    },
+    {
+      "doc_id": "2010 - gparted",
+      "page_count": 26,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 68,
+      "req_like_count": 68,
+      "word_count_mean": 19.2
+    },
+    {
+      "doc_id": "2010 - home 1.3",
+      "page_count": 15,
+      "extraction_method": "id_split",
+      "req_ids_detected": 5,
+      "records_extracted": 4,
+      "req_like_count": 0,
+      "word_count_mean": 22.8
+    },
+    {
+      "doc_id": "2010 - mashboot",
+      "page_count": 15,
+      "extraction_method": "id_split",
+      "req_ids_detected": 59,
+      "records_extracted": 37,
+      "req_like_count": 19,
+      "word_count_mean": 15.8
+    },
+    {
+      "doc_id": "2010 - split merge",
+      "page_count": 34,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 0,
+      "records_extracted": 63,
+      "req_like_count": 63,
+      "word_count_mean": 33.7
+    },
+    {
+      "doc_id": "2011 - opensg 0.1",
+      "page_count": 16,
+      "extraction_method": "sentence_split",
+      "req_ids_detected": 1,
+      "records_extracted": 13,
+      "req_like_count": 13,
+      "word_count_mean": 21.2
+    }
+  ]
+}

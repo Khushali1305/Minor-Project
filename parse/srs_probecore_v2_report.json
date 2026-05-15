@@ -1,0 +1,73 @@
+{
+  "version": "v2",
+  "total_items": 919,
+  "source_distribution": {
+    "Grosser": 221,
+    "PURE": 600,
+    "PROMISE_exp": 98
+  },
+  "modal_distribution": {
+    "must": 66,
+    "should": 122,
+    "shall": 360,
+    "will": 201,
+    "can": 101,
+    "may": 49,
+    "none": 20
+  },
+  "ears_distribution": {
+    "Ubiquitous requirement": 163,
+    "Optional requirement": 4,
+    "Unwanted behaviour": 9,
+    "Event-driven requirement": 26,
+    "State-driven requirement": 5,
+    "optional requirement": 3,
+    "state driven": 2,
+    "Option": 2,
+    "option": 2,
+    "state-driven requirement": 2,
+    "Event -driven": 1,
+    "State requirement": 1,
+    "Optional Feature": 1,
+    "Ubiquitous": 262,
+    "unknown": 402,
+    "UnwantedBehavior": 19,
+    "EventDriven": 12,
+    "StateDriven": 2,
+    "OptionalFeatures": 1
+  },
+  "with_reference_rewrite": 221,
+  "fully_aligned": 221,
+  "word_count_mean": 22.55,
+  "word_count_median": 23,
+  "audit_results": {
+    "sample_size": 50,
+    "keep": 38,
+    "fix": 4,
+    "reject": 8,
+    "accept_rate_pct": 84
+  },
+  "rejection_breakdown": {
+    "pure": {
+      "doc_header_noise": 134,
+      "pronoun_subject": 814,
+      "context_opener": 143,
+      "word_count_after_fix": 143,
+      "duplicate": 289,
+      "truncated_list": 122,
+      "external_ref": 525,
+      "glossary_definition": 68,
+      "non_system_statement": 3,
+      "deleted_marker": 14
+    },
+    "grosser": {
+      "pronoun_subject": 7,
+      "duplicate": 18,
+      "word_count": 3
+    },
+    "promise": {
+      "duplicate": 83,
+      "pronoun_subject": 4
+    }
+  }
+}

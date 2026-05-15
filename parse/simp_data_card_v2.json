@@ -1,0 +1,58 @@
+{
+  "benchmark_name": "Simp-ProbeCore",
+  "version": "v2",
+  "change_from_v1": "OneStopEnglish uses full articles instead of 2-3 sentence excerpts. This avoids sentence-level alignment assumptions and enables all three probe families for OSE items.",
+  "total_base_items": 1780,
+  "by_dataset": {
+    "TSAR2025": 40,
+    "OneStopEnglish": 128,
+    "ASSET": 1612
+  },
+  "by_target_level": {
+    "a2": 84,
+    "b1": 84,
+    "simpler": 1612
+  },
+  "by_probe_role": {
+    "invariance": 1780,
+    "directional": 168,
+    "shortcut": 1780
+  },
+  "total_references": 16288,
+  "text_length_summary": {
+    "TSAR2025": "paragraph-level, ~77 words avg",
+    "OneStopEnglish": "article-level, ~600+ words avg",
+    "ASSET": "sentence-level, ~22 words avg"
+  },
+  "source_corpora": [
+    {
+      "name": "TSAR 2025",
+      "url": "https://huggingface.co/datasets/cardiffnlp/TSAR2025_SharedTask_RCTS_Trial-Data",
+      "role": "Main backbone: explicit CEFR targets (B2+ to A2/B1)",
+      "items": 40
+    },
+    {
+      "name": "OneStopEnglish",
+      "url": "https://huggingface.co/datasets/SetFit/onestop_english",
+      "role": "Full-article directional probes with aligned difficulty levels, also supports invariance and shortcut",
+      "items": 128
+    },
+    {
+      "name": "ASSET",
+      "url": "https://huggingface.co/datasets/facebook/asset",
+      "role": "Sentence-level invariance and shortcut probes with 10 reference simplifications per item",
+      "items": 1612
+    }
+  ],
+  "filtering": {
+    "min_words_asset": 12,
+    "min_words_ose": 50,
+    "min_words_tsar": 15,
+    "removed_identical_simplifications": true
+  },
+  "target_level_mapping": {
+    "a2": "CEFR A2 (elementary)",
+    "b1": "CEFR B1 (intermediate)",
+    "simpler": "General simplification (no explicit CEFR target)"
+  }
+}
