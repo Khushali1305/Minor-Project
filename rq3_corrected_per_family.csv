@@ -1,0 +1,4 @@
+probe_family,pass_gold_alignment,fail_gold_alignment,difference,n_pass,n_fail
+invariance,0.746,,,1752,0
+directional,0.7427,0.7561,-0.0134,1314,438
+shortcut,0.7276,0.7644,-0.0368,876,876

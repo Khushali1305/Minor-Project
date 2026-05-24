@@ -1,0 +1,8 @@
+textstat>=0.7
+bert-score>=0.3.13
+anthropic>=0.30.0
+openai>=1.30.0
+mistralai>=1.0.0
+torch>=2.0.0
+transformers>=4.40.0
+requests>=2.31.0

@@ -1,0 +1,26 @@
+{
+  "total": 10814,
+  "by_family": {
+    "invariance": 8405,
+    "directional": 374,
+    "shortcut": 2035
+  },
+  "by_subtype": {
+    "lexical": 470,
+    "syntactic": 56,
+    "ose_difficulty_pair": 374,
+    "detail_generic_qualifying": 2033,
+    "detail_qualifying": 1,
+    "detail_medical": 1,
+    "semantic": 7879
+  },
+  "by_tier": {
+    "1": 9213,
+    "2": 1601
+  },
+  "keep_rate": 0.5833333333333334,
+  "dropped_subtypes": [
+    "tsar_target_pair",
+    "detail_safety"
+  ]
+}

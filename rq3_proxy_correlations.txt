@@ -1,0 +1,31 @@
+RQ3 Proxy: Großer Gold-Alignment Correlation Report
+============================================================
+
+Benchmark  : SRS-ProbeCore-v5-frozen.json
+Grosser items: 219
+Models     : 8
+Similarity : SequenceMatcher ratio (bert_score not installed)
+Gold source: reference_rewrite (EARS expert rewrites, Großer benchmark)
+
+GLOBAL SPEARMAN CORRELATIONS (n=8 models)
+  Spearman(R_f,  gold_combined) = -0.2381  (p=0.5702)
+  Spearman(O_f,  gold_combined) = +0.0000  (p=1.0)
+  Spearman(R_f,  O_f)           = -0.8095  (p=0.0149)
+
+PER-ITEM SPEARMAN CORRELATIONS (n=212 Großer items)
+  Avg per-item Spearman(R_f, gold) = -0.1619
+  Avg per-item Spearman(O_f, gold) = 0.144
+
+VERDICT: O(f) aligns BETTER with gold rewrites. Δ = +0.2381
+
+RANK TABLE
+Model                   R_f    O_f   Gold  Rk_R  Rk_O  Rk_G  |ΔR_G|  |ΔO_G|
+------------------------------------------------------------------------
+Llama-3.1-8B          0.739  0.752  0.792     1     8     1       0       7
+GPT-4.1               0.628  0.849  0.787     7     5     2       5       3
+Rule Baseline         0.550  0.885  0.769     8     1     3       5       2
+FLAN-T5-Large         0.639  0.869  0.756     6     2     4       2       2
+FLAN-T5-XL            0.668  0.864  0.745     4     3     5       1       2
+Gemma-3-27B           0.672  0.786  0.720     3     7     6       3       1
+Qwen2.5-32B           0.668  0.853  0.706     5     4     7       2       3
+Llama-3.1-70B         0.687  0.796  0.692     2     6     8       6       2

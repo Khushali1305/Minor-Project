@@ -1,0 +1,39 @@
+RQ3 Corrected: Großer Gold-Alignment Correlation Report
+============================================================
+
+METHODOLOGY
+  R(f): ESTABLISHED from diagnostic report (24,541 evals, deterministic scoring)
+  O(f): Structural EARS conformance ONLY (no SequenceMatcher meaning preservation)
+  Gold: Jaccard (content tokens) + Modal match + EARS keyword match
+  Großer items: 219 with gold rewrites
+  Models: 8
+
+ALL CORRELATIONS
+------------------------------------------------------------
+  DS vs gold_combined                      ρ=+0.1429  p=0.7358  
+  DS vs gold_ears_kw                       ρ=+0.3333  p=0.4198  
+  DS vs gold_jaccard                       ρ=+0.9286  p=0.0009  ***
+  DS vs gold_modal                         ρ=-0.8144  p=0.0138  **
+  DS vs gold_structural                    ρ=-0.1905  p=0.6514  
+  IR vs gold_combined                      ρ=-0.2275  p=0.5878  
+  IR vs gold_ears_kw                       ρ=-0.1078  p=0.7995  
+  IR vs gold_jaccard                       ρ=+0.7785  p=0.0229  **
+  IR vs gold_modal                         ρ=-0.6807  p=0.0631  
+  IR vs gold_structural                    ρ=-0.3473  p=0.3993  
+  O(f) vs gold_combined                    ρ=-0.3333  p=0.4198  
+  O(f) vs gold_ears_kw                     ρ=-0.3095  p=0.4556  
+  O(f) vs gold_jaccard                     ρ=-0.5476  p=0.16  
+  O(f) vs gold_modal                       ρ=+0.3353  p=0.4168  
+  O(f) vs gold_structural                  ρ=-0.1429  p=0.7358  
+  R(f) vs gold_combined                    ρ=-0.5476  p=0.16  
+  R(f) vs gold_ears_kw                     ρ=-0.2143  p=0.6103  
+  R(f) vs gold_jaccard                     ρ=+0.2857  p=0.4927  
+  R(f) vs gold_modal                       ρ=-0.4192  p=0.3013  
+  R(f) vs gold_structural                  ρ=-0.7857  p=0.0208  **
+  SR vs gold_combined                      ρ=-0.1190  p=0.7789  
+  SR vs gold_ears_kw                       ρ=-0.2857  p=0.4927  
+  SR vs gold_jaccard                       ρ=-0.8571  p=0.0065  ***
+  SR vs gold_modal                         ρ=+0.6946  p=0.0559  
+  SR vs gold_structural                    ρ=+0.1190  p=0.7789  
+
+  R(f) vs O(f)                             ρ=+0.0476  p=0.9108
