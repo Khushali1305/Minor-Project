@@ -1,0 +1,21 @@
+# Environment
+.env
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# Optional: ignore generated outputs if you do not want to commit them
+# output/
+# results/

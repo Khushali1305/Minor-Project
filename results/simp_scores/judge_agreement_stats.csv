@@ -1,0 +1,16 @@
+metric,value
+total_judged,0
+agreed,0
+disagreed,0
+agreement_rate,0
+disagree_CONTENT,577
+disagree_API_ERROR,368
+disagree_AGENTS,182
+disagree_ACTIONS,173
+disagree_MODALS,18
+disagree_JSON_PARSE,11
+disagree_NEGATION,8
+disagree_ CONDITIONS,1
+disagree_TENSE,1
+disagree_GRAMMAR,1
+disagree_TONE,1

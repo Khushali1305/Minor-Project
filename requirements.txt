@@ -1,0 +1,18 @@
+# =============================================================================
+#  requirements.txt — Simplification benchmark pipeline dependencies
+# =============================================================================
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+requests>=2.31.0
+textstat>=0.7.3          # Flesch-Kincaid readability scoring
+
+# ── LLM provider SDKs (install only what you need) ───────────────────────────
+openai>=1.30.0           # OpenAI + Groq (Groq is OpenAI-compatible)
+anthropic>=0.28.0        # Anthropic Claude
+groq>=0.9.0              # Groq (fast inference)
+mistralai>=1.0.0         # Mistral AI
+
+# ── Optional: richer semantic similarity (BERTScore) ─────────────────────────
+# Uncomment if you replace the word-F1 scorer with true BERTScore:
+# bert-score>=0.3.13
+# torch>=2.0.0
