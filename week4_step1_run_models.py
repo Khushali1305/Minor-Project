@@ -83,10 +83,10 @@ CONFIG = {
     },
 
     "openai_model"      : "gpt-4.1",
-    "openai_api_key"    : os.environ.get("OPENAI_API_KEY", "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"),
+    "openai_api_key"    : os.environ.get("OPENAI_API_KEY", ""),
 
     # HF_TOKEN — also set into os.environ so HuggingFace Hub library picks it up
-    "hf_token"          : os.environ.get("HF_TOKEN", "hf_nddTIwBrfpiKGEWzUJOmbInmeIRYxyVrISsss"),
+    "hf_token"          : os.environ.get("HF_TOKEN", ""),
 
     "max_new_tokens"    : 256,
     "temperature"       : 0.0,
